@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- En-tête -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Mon Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#presentation" class="hover:text-blue-500">Présentation</a></li>
+                    <li><a href="#projets" class="hover:text-blue-500">Projets</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Présentation -->
+    <section id="presentation" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-4">Présentation</h2>
+            <p class="text-lg mb-4">Bonjour! Je suis un développeur passionné par la création de sites web et d'applications. J'aime utiliser les technologies modernes pour réaliser des projets innovants.</p>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-4">Mes Projets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold">Projet 1</h3>
+                    <p class="text-gray-600">Description du projet 1. Une brève explication de ce que j'ai fait et des technologies utilisées.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold">Projet 2</h3>
+                    <p class="text-gray-600">Description du projet 2. Une brève explication de ce que j'ai fait et des technologies utilisées.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold">Projet 3</h3>
+                    <p class="text-gray-600">Description du projet 3. Une brève explication de ce que j'ai fait et des technologies utilisées.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-4">Contact</h2>
+            <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow">
+                <div class="mb-4">
+                    <label for="nom" class="block text-gray-700">Nom:</label>
+                    <input type="text" id="nom" name="nom" class="w-full border border-gray-300 p-2 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email:</label>
+                    <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message:</label>
+                    <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 p-2 rounded" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
